@@ -13,6 +13,8 @@
 
         public int Count { get; set; }
 
+        public IFormFile? Image { get; set; }
+
         public string? ImageName { get; set; }
 
         public int? CategoryId { get; set; }

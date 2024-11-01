@@ -4281,19 +4281,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dev-PC\\.nuget\\packages\\": {}
+    "C:\\Users\\SOURCE\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp.DAL\\TestApp.DAL.csproj",
+      "projectUniqueName": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp.DAL\\TestApp.DAL.csproj",
       "projectName": "TestApp.DAL",
-      "projectPath": "C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp.DAL\\TestApp.DAL.csproj",
-      "packagesPath": "C:\\Users\\Dev-PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp.DAL\\obj\\",
+      "projectPath": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp.DAL\\TestApp.DAL.csproj",
+      "packagesPath": "C:\\Users\\SOURCE\\.nuget\\packages\\",
+      "outputPath": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Dev-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\SOURCE\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4366,7 +4366,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

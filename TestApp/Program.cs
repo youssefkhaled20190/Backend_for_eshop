@@ -1,8 +1,7 @@
+
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -14,6 +13,7 @@ using TestApp.Mapper;
 using TestApp.PLL.Interfaces;
 using TestApp.PLL.Repositories;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -23,18 +23,22 @@ builder.Services.AddDbContext<StoreContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")).EnableSensitiveDataLogging();
 });
+
+// Dependency Injection for Repositories
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-
-builder.Services.AddScoped< IProductRepository, ProductRepository>();
-
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
-
 builder.Services.AddScoped<IRatingRepository, RatingRepository>();
 
+// AutoMapper configuration
+builder.Services.AddAutoMapper(m =>
+{
+    m.AddProfile(new CategoryProfile());
+    m.AddProfile(new ProductProfile());
+    m.AddProfile(new RatingProfile());
+});
 
-builder.Services.AddAutoMapper(m => m.AddProfile(new CategoryProfile()));
-builder.Services.AddAutoMapper(m => m.AddProfile(new ProductProfile()));
-builder.Services.AddAutoMapper(m => m.AddProfile(new RatingProfile()));
+// Identity configuration
 builder.Services.AddIdentity<Users, IdentityRole>(options =>
 {
     options.Password.RequireDigit = true;
@@ -43,43 +47,34 @@ builder.Services.AddIdentity<Users, IdentityRole>(options =>
     options.Password.RequireUppercase = true;
     options.Password.RequiredLength = 5;
     options.SignIn.RequireConfirmedAccount = false;
-}).AddEntityFrameworkStores<StoreContext>()
-            .AddTokenProvider<DataProtectorTokenProvider<Users>>(TokenOptions.DefaultProvider);
+})
+.AddEntityFrameworkStores<StoreContext>()
+.AddTokenProvider<DataProtectorTokenProvider<Users>>(TokenOptions.DefaultProvider);
 
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(
-    options =>
-    {
-        options.LoginPath = "Account/Login";
-        options.AccessDeniedPath = "Home/Error";
-    }
-    );
+// JWT configuration
+var jwtOptions = builder.Configuration.GetSection("Jwt").Get<JwtOptions>();
+builder.Services.AddSingleton(jwtOptions);
 
-var Jwtoptions = builder.Configuration.GetSection("Jwt").Get<JwtOptions>();
-builder.Services.AddSingleton(Jwtoptions);
-
-builder.Services.AddAuthentication().AddJwtBearer(JwtBearerDefaults.AuthenticationScheme , Options =>
+builder.Services.AddAuthentication(options =>
 {
-   Options.SaveToken = true;
-    Options.TokenValidationParameters = new TokenValidationParameters
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.SaveToken = true;
+    options.TokenValidationParameters = new TokenValidationParameters
     {
         ValidateIssuer = true,
-        ValidIssuer = Jwtoptions.Issuer,
+        ValidIssuer = jwtOptions.Issuer,
         ValidateAudience = true,
-        ValidAudience = Jwtoptions.Audience,
+        ValidAudience = jwtOptions.Audience,
         ValidateIssuerSigningKey = true,
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Jwtoptions.SigningKey))
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtOptions.SigningKey))
     };
 });
-//builder.Services.AddControllers(options =>
-//{
-//    // Apply [Authorize] globally
-//    var policy = new AuthorizationPolicyBuilder()
-//                 .RequireAuthenticatedUser()
-//                 .Build();
-//    options.Filters.Add(new AuthorizeFilter(policy));
-//});
 
-
+// Swagger configuration
 builder.Services.AddSwaggerGen(c =>
 {
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -91,26 +86,29 @@ builder.Services.AddSwaggerGen(c =>
         Scheme = "Bearer"
     });
 
-    c.AddSecurityRequirement(new OpenApiSecurityRequirement {
-        {
-            new OpenApiSecurityScheme
-            {
-                Reference = new OpenApiReference
-                {
-                    Type = ReferenceType.SecurityScheme,
-                    Id = "Bearer"
-                }
-            },
-            new string[] { }
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        { new OpenApiSecurityScheme
+          {
+              Reference = new OpenApiReference
+              {
+                  Type = ReferenceType.SecurityScheme,
+                  Id = "Bearer"
+              }
+          },
+          new string[] { }
         }
     });
 });
 
-
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-builder.Services.AddAuthorization();
+// CORS configuration
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        builder => builder.AllowAnyOrigin()
+                          .AllowAnyMethod()
+                          .AllowAnyHeader());
+});
 
 var app = builder.Build();
 
@@ -122,12 +120,11 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseStaticFiles(); // Ensure this line is present to serve static files
+app.UseCors("AllowAll");
 app.UseAuthentication();
 app.UseAuthorization();
 
-
-
 app.MapControllers();
-app.UseCors(policy => policy.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 
 app.Run();

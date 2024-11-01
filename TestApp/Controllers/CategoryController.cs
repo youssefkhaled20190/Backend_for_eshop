@@ -67,7 +67,7 @@ namespace TestApp.Controllers
             return CreatedAtAction(nameof(GetcategoriesById), new { id = categoryEntity.ID }, categoryEntity);
         }
 
-        [HttpPut]
+        [HttpPut("{id}")]
         public async Task<ActionResult<List<CategoryModel>>> UpdateCategory([FromBody] CategoryModel category, int id)
         {
 

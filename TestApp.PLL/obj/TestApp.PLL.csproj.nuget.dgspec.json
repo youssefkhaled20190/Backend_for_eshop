@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp.PLL\\TestApp.PLL.csproj": {}
+    "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp.PLL\\TestApp.PLL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp.DAL\\TestApp.DAL.csproj": {
+    "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp.DAL\\TestApp.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp.DAL\\TestApp.DAL.csproj",
+        "projectUniqueName": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp.DAL\\TestApp.DAL.csproj",
         "projectName": "TestApp.DAL",
-        "projectPath": "C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp.DAL\\TestApp.DAL.csproj",
-        "packagesPath": "C:\\Users\\Dev-PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp.DAL\\obj\\",
+        "projectPath": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp.DAL\\TestApp.DAL.csproj",
+        "packagesPath": "C:\\Users\\SOURCE\\.nuget\\packages\\",
+        "outputPath": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Dev-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SOURCE\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -87,21 +87,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp.PLL\\TestApp.PLL.csproj": {
+    "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp.PLL\\TestApp.PLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp.PLL\\TestApp.PLL.csproj",
+        "projectUniqueName": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp.PLL\\TestApp.PLL.csproj",
         "projectName": "TestApp.PLL",
-        "projectPath": "C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp.PLL\\TestApp.PLL.csproj",
-        "packagesPath": "C:\\Users\\Dev-PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp.PLL\\obj\\",
+        "projectPath": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp.PLL\\TestApp.PLL.csproj",
+        "packagesPath": "C:\\Users\\SOURCE\\.nuget\\packages\\",
+        "outputPath": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp.PLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Dev-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SOURCE\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -116,8 +116,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp.DAL\\TestApp.DAL.csproj": {
-                "projectPath": "C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp.DAL\\TestApp.DAL.csproj"
+              "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp.DAL\\TestApp.DAL.csproj": {
+                "projectPath": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp.DAL\\TestApp.DAL.csproj"
               }
             }
           }
@@ -152,7 +152,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

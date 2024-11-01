@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TestApp.DAL.Context;
 using TestApp.DAL.Entities;
+using TestApp.Helper;
 using TestApp.ModelClasses;
 using TestApp.PLL.Interfaces;
 using TestApp.PLL.Repositories;
@@ -66,10 +67,8 @@ namespace TestApp.Controllers
 
 
         [HttpPost]
-        public async Task<ActionResult<List<ProductsModel>>> AddNewProducts([FromBody] ProductsModel product)
+        public async Task<ActionResult<List<ProductsModel>>> AddNewProducts([FromForm] ProductsModel product)
         {
-
-
             var category = await _storeContext.Categories.FindAsync(product.CategoryId);
 
             if (category == null)
@@ -77,17 +76,20 @@ namespace TestApp.Controllers
                 return BadRequest($"Category with ID {product.CategoryId} does not exist.");
             }
 
-
+            if (product.Image != null)
+            {
+                product.ImageName = DocumentSettings.UploadFile(product.Image, "Images");
+            }
 
             var ProductEntity = _mapper.Map<Products>(product);
             await _productRepository.Add(ProductEntity);
 
-
             return Ok(new List<ProductsModel>());
         }
 
-        [HttpPut]
-        public async Task<ActionResult<List<ProductsModel>>> UpdateProduct([FromBody] ProductsModel product , int id)
+
+        [HttpPut("{id}")]
+        public async Task<ActionResult<List<ProductsModel>>> UpdateProduct([FromForm] ProductsModel product , int id)
         {
 
             if (id != product.ID)
@@ -101,11 +103,19 @@ namespace TestApp.Controllers
                 return NotFound("Product not found");
             }
 
+            if (product.Image != null)
+            {
+                existingProduct.ImageName = DocumentSettings.UploadFile(product.Image, "Images");
+            }
+
+
             // Update the existing product properties as necessary
             existingProduct.ProductTittle = product.ProductTittle;
             existingProduct.ProductPrice = product.ProductPrice;
             existingProduct.ProductDescription = product.ProductDescription;
-            existingProduct.ImageName = product.ImageName;
+            existingProduct.Count = product.Count;
+            //existingProduct.ImageName = product.ImageName;
+            existingProduct.CategoryId = product.CategoryId;
 
             // Add other properties as needed
 

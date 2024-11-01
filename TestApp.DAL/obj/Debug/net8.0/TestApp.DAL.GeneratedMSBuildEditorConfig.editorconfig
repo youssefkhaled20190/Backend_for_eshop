@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TestApp.DAL
-build_property.ProjectDir = C:\Users\Dev-PC\Downloads\TestApp-20241009T090124Z-001\TestApp\TestApp.DAL\
+build_property.ProjectDir = F:\FCIH\Projects\Backend_for_eshop\TestApp.DAL\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

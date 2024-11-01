@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp\\wwwroot\\files\\Images\\830c6a00-7a46-4fd9-9d8b-31d7463ba9ccwallpaperflare.com_wallpaper.jpg",
+      "PackagePath": "staticwebassets\\files\\Images\\830c6a00-7a46-4fd9-9d8b-31d7463ba9ccwallpaperflare.com_wallpaper.jpg"
+    },
+    {
+      "Id": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp\\wwwroot\\files\\Images\\92ce5494-a23a-4ca3-8f62-5b4b6a8376ac.png",
+      "PackagePath": "staticwebassets\\files\\Images\\92ce5494-a23a-4ca3-8f62-5b4b6a8376ac.png"
+    },
+    {
+      "Id": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp\\wwwroot\\files\\Images\\d94e9e01-2818-4af1-a0b4-eb13abc8e0c5.png",
+      "PackagePath": "staticwebassets\\files\\Images\\d94e9e01-2818-4af1-a0b4-eb13abc8e0c5.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TestApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.TestApp.props",
+      "PackagePath": "build\\TestApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.TestApp.props",
+      "PackagePath": "buildMultiTargeting\\TestApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.TestApp.props",
+      "PackagePath": "buildTransitive\\TestApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

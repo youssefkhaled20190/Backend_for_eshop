@@ -34,11 +34,10 @@ namespace TestApp.DAL.Context
                 .HasForeignKey(r => r.ProductId);
 
             modelBuilder.Entity<Categories>()
-             .HasMany(p => p.Products)
-             .WithOne(r => r.Category)
-             .HasForeignKey(r => r.CategoryId)
-             .OnDelete(DeleteBehavior.SetNull);
-
+         .HasMany(c => c.Products)
+         .WithOne(p => p.Category)
+         .HasForeignKey(p => p.CategoryId)
+         .OnDelete(DeleteBehavior.SetNull);
 
             base.OnModelCreating(modelBuilder);
 

@@ -1,11 +1,77 @@
 {
   "Version": 1,
-  "Hash": "kufGCVPGni8vyAPb8Q62CL4bJyQrblZakjDiYqUhwtQ=",
+  "Hash": "NCHNkjDQXnQKo5HmuxuEMlAjGDsqipVNI9bF1fv1I6g=",
   "Source": "TestApp",
   "BasePath": "_content/TestApp",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "TestApp\\wwwroot",
+      "Source": "TestApp",
+      "ContentRoot": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp\\wwwroot\\",
+      "BasePath": "_content/TestApp",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp\\wwwroot\\files\\Images\\830c6a00-7a46-4fd9-9d8b-31d7463ba9ccwallpaperflare.com_wallpaper.jpg",
+      "SourceId": "TestApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp\\wwwroot\\",
+      "BasePath": "_content/TestApp",
+      "RelativePath": "files/Images/830c6a00-7a46-4fd9-9d8b-31d7463ba9ccwallpaperflare.com_wallpaper.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\Images\\830c6a00-7a46-4fd9-9d8b-31d7463ba9ccwallpaperflare.com_wallpaper.jpg"
+    },
+    {
+      "Identity": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp\\wwwroot\\files\\Images\\92ce5494-a23a-4ca3-8f62-5b4b6a8376ac.png",
+      "SourceId": "TestApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp\\wwwroot\\",
+      "BasePath": "_content/TestApp",
+      "RelativePath": "files/Images/92ce5494-a23a-4ca3-8f62-5b4b6a8376ac.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\Images\\92ce5494-a23a-4ca3-8f62-5b4b6a8376ac.png"
+    },
+    {
+      "Identity": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp\\wwwroot\\files\\Images\\d94e9e01-2818-4af1-a0b4-eb13abc8e0c5.png",
+      "SourceId": "TestApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp\\wwwroot\\",
+      "BasePath": "_content/TestApp",
+      "RelativePath": "files/Images/d94e9e01-2818-4af1-a0b4-eb13abc8e0c5.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\Images\\d94e9e01-2818-4af1-a0b4-eb13abc8e0c5.png"
+    }
+  ]
 }

@@ -1,34 +1,58 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\",
+  "WorkspaceRootPath": "F:\\FCIH\\Projects\\Backend_for_eshop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp\\Controllers\\AuthenticationController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TestApp\\Controllers\\AuthenticationController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp.DAL\\Migrations\\20241031224611_configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TestApp.DAL\\Migrations\\20241031224611_configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp\\Controllers\\ProductController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TestApp\\Controllers\\ProductController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{900F45C9-4968-4C9D-B3EE-DF0EFD8BFAE4}|TestApp.DAL\\TestApp.DAL.csproj|f:\\fcih\\projects\\backend_for_eshop\\testapp.dal\\entities\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{900F45C9-4968-4C9D-B3EE-DF0EFD8BFAE4}|TestApp.DAL\\TestApp.DAL.csproj|solutionrelative:testapp.dal\\entities\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp\\Controllers\\CategoryController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TestApp\\Controllers\\CategoryController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{900F45C9-4968-4C9D-B3EE-DF0EFD8BFAE4}|TestApp.DAL\\TestApp.DAL.csproj|f:\\fcih\\projects\\backend_for_eshop\\testapp.dal\\context\\storecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{900F45C9-4968-4C9D-B3EE-DF0EFD8BFAE4}|TestApp.DAL\\TestApp.DAL.csproj|solutionrelative:testapp.dal\\context\\storecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp\\Authmodels\\JwtOptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TestApp\\Authmodels\\JwtOptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E30633CD-CAC5-4DBA-8C4D-5D00EE0A3307}|TestApp.PLL\\TestApp.PLL.csproj|f:\\fcih\\projects\\backend_for_eshop\\testapp.pll\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E30633CD-CAC5-4DBA-8C4D-5D00EE0A3307}|TestApp.PLL\\TestApp.PLL.csproj|solutionrelative:testapp.pll\\repositories\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TestApp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{900F45C9-4968-4C9D-B3EE-DF0EFD8BFAE4}|TestApp.DAL\\TestApp.DAL.csproj|f:\\fcih\\projects\\backend_for_eshop\\testapp.dal\\entities\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{900F45C9-4968-4C9D-B3EE-DF0EFD8BFAE4}|TestApp.DAL\\TestApp.DAL.csproj|solutionrelative:testapp.dal\\entities\\categories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TestApp\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9752A66F-779B-4492-8557-60BB489484B6}|TestApp\\TestApp.csproj|f:\\fcih\\projects\\backend_for_eshop\\testapp\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9752A66F-779B-4492-8557-60BB489484B6}|TestApp\\TestApp.csproj|solutionrelative:testapp\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp\\Controllers\\RatingController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TestApp\\Controllers\\RatingController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9752A66F-779B-4492-8557-60BB489484B6}|TestApp\\TestApp.csproj|f:\\fcih\\projects\\backend_for_eshop\\testapp\\helper\\documentsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9752A66F-779B-4492-8557-60BB489484B6}|TestApp\\TestApp.csproj|solutionrelative:testapp\\helper\\documentsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9752A66F-779B-4492-8557-60BB489484B6}|TestApp\\TestApp.csproj|f:\\fcih\\projects\\backend_for_eshop\\testapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9752A66F-779B-4492-8557-60BB489484B6}|TestApp\\TestApp.csproj|solutionrelative:testapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9752A66F-779B-4492-8557-60BB489484B6}|TestApp\\TestApp.csproj|f:\\fcih\\projects\\backend_for_eshop\\testapp\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9752A66F-779B-4492-8557-60BB489484B6}|TestApp\\TestApp.csproj|solutionrelative:testapp\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9752A66F-779B-4492-8557-60BB489484B6}|TestApp\\TestApp.csproj|f:\\fcih\\projects\\backend_for_eshop\\testapp\\modelclasses\\productsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9752A66F-779B-4492-8557-60BB489484B6}|TestApp\\TestApp.csproj|solutionrelative:testapp\\modelclasses\\productsmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9752A66F-779B-4492-8557-60BB489484B6}|TestApp\\TestApp.csproj|f:\\fcih\\projects\\backend_for_eshop\\testapp\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9752A66F-779B-4492-8557-60BB489484B6}|TestApp\\TestApp.csproj|solutionrelative:testapp\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9752A66F-779B-4492-8557-60BB489484B6}|TestApp\\TestApp.csproj|f:\\fcih\\projects\\backend_for_eshop\\testapp\\authmodels\\jwtoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9752A66F-779B-4492-8557-60BB489484B6}|TestApp\\TestApp.csproj|solutionrelative:testapp\\authmodels\\jwtoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9752A66F-779B-4492-8557-60BB489484B6}|TestApp\\TestApp.csproj|f:\\fcih\\projects\\backend_for_eshop\\testapp\\controllers\\ratingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9752A66F-779B-4492-8557-60BB489484B6}|TestApp\\TestApp.csproj|solutionrelative:testapp\\controllers\\ratingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,48 +70,134 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "TestApp\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "TestApp\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T09:06:08.217Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "TestApp\\Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "TestApp\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAwwAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T09:05:38.932Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AuthenticationController.cs",
-              "DocumentMoniker": "C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp\\Controllers\\AuthenticationController.cs",
-              "RelativeDocumentMoniker": "TestApp\\Controllers\\AuthenticationController.cs",
-              "ToolTip": "C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp\\Controllers\\AuthenticationController.cs",
-              "RelativeToolTip": "TestApp\\Controllers\\AuthenticationController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHwAAAARAAAAAAAAAA==",
+              "Title": "20241031224611_configuration.cs",
+              "DocumentMoniker": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp.DAL\\Migrations\\20241031224611_configuration.cs",
+              "RelativeDocumentMoniker": "TestApp.DAL\\Migrations\\20241031224611_configuration.cs",
+              "ToolTip": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp.DAL\\Migrations\\20241031224611_configuration.cs",
+              "RelativeToolTip": "TestApp.DAL\\Migrations\\20241031224611_configuration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T08:16:46.697Z",
+              "WhenOpened": "2024-10-31T22:46:12.47Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp.PLL\\Repositories\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "TestApp.PLL\\Repositories\\GenericRepository.cs",
+              "ToolTip": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp.PLL\\Repositories\\GenericRepository.cs",
+              "RelativeToolTip": "TestApp.PLL\\Repositories\\GenericRepository.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwCUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T22:20:55.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Categories.cs",
+              "DocumentMoniker": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp.DAL\\Entities\\Categories.cs",
+              "RelativeDocumentMoniker": "TestApp.DAL\\Entities\\Categories.cs",
+              "ToolTip": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp.DAL\\Entities\\Categories.cs",
+              "RelativeToolTip": "TestApp.DAL\\Entities\\Categories.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T21:29:24.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Products.cs",
+              "DocumentMoniker": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp.DAL\\Entities\\Products.cs",
+              "RelativeDocumentMoniker": "TestApp.DAL\\Entities\\Products.cs",
+              "ToolTip": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp.DAL\\Entities\\Products.cs",
+              "RelativeToolTip": "TestApp.DAL\\Entities\\Products.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAA5wCIAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T21:28:57.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StoreContext.cs",
+              "DocumentMoniker": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp.DAL\\Context\\StoreContext.cs",
+              "RelativeDocumentMoniker": "TestApp.DAL\\Context\\StoreContext.cs",
+              "ToolTip": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp.DAL\\Context\\StoreContext.cs",
+              "RelativeToolTip": "TestApp.DAL\\Context\\StoreContext.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAYwCoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T21:27:29.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductsModel.cs",
+              "DocumentMoniker": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp\\ModelClasses\\ProductsModel.cs",
+              "RelativeDocumentMoniker": "TestApp\\ModelClasses\\ProductsModel.cs",
+              "ToolTip": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp\\ModelClasses\\ProductsModel.cs",
+              "RelativeToolTip": "TestApp\\ModelClasses\\ProductsModel.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAA5wBEAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T20:47:16.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DocumentSettings.cs",
+              "DocumentMoniker": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp\\Helper\\DocumentSettings.cs",
+              "RelativeDocumentMoniker": "TestApp\\Helper\\DocumentSettings.cs",
+              "ToolTip": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp\\Helper\\DocumentSettings.cs",
+              "RelativeToolTip": "TestApp\\Helper\\DocumentSettings.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAUwAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T20:40:04.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "TestApp\\Controllers\\AuthenticationController.cs",
+              "ToolTip": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "TestApp\\Controllers\\AuthenticationController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T08:16:46.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp\\Program.cs",
+              "RelativeDocumentMoniker": "TestApp\\Program.cs",
+              "ToolTip": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp\\Program.cs",
+              "RelativeToolTip": "TestApp\\Program.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAAAHAAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T21:24:17.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "TestApp\\Controllers\\ProductController.cs",
+              "ToolTip": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "TestApp\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAgwFUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T09:06:08.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "JwtOptions.cs",
-              "DocumentMoniker": "C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp\\Authmodels\\JwtOptions.cs",
+              "DocumentMoniker": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp\\Authmodels\\JwtOptions.cs",
               "RelativeDocumentMoniker": "TestApp\\Authmodels\\JwtOptions.cs",
-              "ToolTip": "C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp\\Authmodels\\JwtOptions.cs",
+              "ToolTip": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp\\Authmodels\\JwtOptions.cs",
               "RelativeToolTip": "TestApp\\Authmodels\\JwtOptions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -95,35 +205,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp\\appsettings.json",
-              "RelativeDocumentMoniker": "TestApp\\appsettings.json",
-              "ToolTip": "C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp\\appsettings.json",
-              "RelativeToolTip": "TestApp\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-21T07:37:31.821Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp\\Program.cs",
-              "RelativeDocumentMoniker": "TestApp\\Program.cs",
-              "ToolTip": "C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp\\Program.cs",
-              "RelativeToolTip": "TestApp\\Program.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAIwHwAAAAYAAAAAAAAAA==",
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "TestApp\\Controllers\\CategoryController.cs",
+              "ToolTip": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "TestApp\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAkwGkAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T21:24:17.465Z"
+              "WhenOpened": "2024-10-21T09:05:38.932Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "RatingController.cs",
-              "DocumentMoniker": "C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp\\Controllers\\RatingController.cs",
+              "DocumentMoniker": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp\\Controllers\\RatingController.cs",
               "RelativeDocumentMoniker": "TestApp\\Controllers\\RatingController.cs",
-              "ToolTip": "C:\\Users\\Dev-PC\\Downloads\\TestApp-20241009T090124Z-001\\TestApp\\TestApp\\Controllers\\RatingController.cs",
+              "ToolTip": "F:\\FCIH\\Projects\\Backend_for_eshop\\TestApp\\Controllers\\RatingController.cs",
               "RelativeToolTip": "TestApp\\Controllers\\RatingController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

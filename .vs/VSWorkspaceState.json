@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\TestApp",
+    "\\TestApp\\Controllers"
   ],
+  "SelectedNode": "\\TestApp\\Controllers\\AuthenticationController.cs",
   "PreviewInSolutionExplorer": false
 }
