@@ -98,7 +98,7 @@ namespace TestApp.Controllers
                                     new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtOptions.SigningKey)),
                                     SecurityAlgorithms.HmacSha256),
                                 Issuer = _jwtOptions.Issuer,
-                                Audience = _jwtOptions.Audience
+                                Audience = _jwtOptions.Audience.First()
                             };
 
                             // Create the token

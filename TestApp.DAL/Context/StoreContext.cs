@@ -22,10 +22,9 @@ namespace TestApp.DAL.Context
         public DbSet<Categories> Categories { get; set; }
         public DbSet<Rating> Ratings { get; set; }
 
-        public DbSet<Payment> payments { get; set; }
+       public DbSet<PaymentProcess> PaymentProcesses { get; set; }
 
-        public DbSet<PaymentDetail> paymentDetails { get; set; }
-
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Products>()
@@ -38,6 +37,10 @@ namespace TestApp.DAL.Context
          .WithOne(p => p.Category)
          .HasForeignKey(p => p.CategoryId)
          .OnDelete(DeleteBehavior.SetNull);
+
+
+
+         
 
             base.OnModelCreating(modelBuilder);
 

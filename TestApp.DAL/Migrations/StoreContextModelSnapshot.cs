@@ -172,7 +172,7 @@ namespace TestApp.DAL.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("TestApp.DAL.Entities.Payment", b =>
+            modelBuilder.Entity("TestApp.DAL.Entities.PaymentProcess", b =>
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
@@ -180,50 +180,73 @@ namespace TestApp.DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<decimal>("Amount")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<string>("Country")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CreditCardNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Cvv")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ExpirationDate")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NameOnCard")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("PaymentDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("PaymentMethod")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Phone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UserId")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<string>("productName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("ID");
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("payments");
-                });
-
-            modelBuilder.Entity("TestApp.DAL.Entities.PaymentDetail", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("PaymentId")
-                        .HasColumnType("int");
-
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PaymentId");
-
-                    b.HasIndex("ProductId");
-
-                    b.ToTable("paymentDetails");
+                    b.ToTable("PaymentProcesses");
                 });
 
             modelBuilder.Entity("TestApp.DAL.Entities.Products", b =>
@@ -276,6 +299,10 @@ namespace TestApp.DAL.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Comment")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
@@ -416,34 +443,15 @@ namespace TestApp.DAL.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("TestApp.DAL.Entities.Payment", b =>
+            modelBuilder.Entity("TestApp.DAL.Entities.PaymentProcess", b =>
                 {
                     b.HasOne("TestApp.DAL.Entities.Users", "User")
-                        .WithMany("Payments")
+                        .WithMany("PaymentProcesses")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("User");
-                });
-
-            modelBuilder.Entity("TestApp.DAL.Entities.PaymentDetail", b =>
-                {
-                    b.HasOne("TestApp.DAL.Entities.Payment", "Payment")
-                        .WithMany("PaymentDetails")
-                        .HasForeignKey("PaymentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("TestApp.DAL.Entities.Products", "Product")
-                        .WithMany()
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Payment");
-
-                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("TestApp.DAL.Entities.Products", b =>
@@ -484,11 +492,6 @@ namespace TestApp.DAL.Migrations
                     b.Navigation("Products");
                 });
 
-            modelBuilder.Entity("TestApp.DAL.Entities.Payment", b =>
-                {
-                    b.Navigation("PaymentDetails");
-                });
-
             modelBuilder.Entity("TestApp.DAL.Entities.Products", b =>
                 {
                     b.Navigation("Ratings");
@@ -496,7 +499,7 @@ namespace TestApp.DAL.Migrations
 
             modelBuilder.Entity("TestApp.DAL.Entities.Users", b =>
                 {
-                    b.Navigation("Payments");
+                    b.Navigation("PaymentProcesses");
 
                     b.Navigation("Products");
 

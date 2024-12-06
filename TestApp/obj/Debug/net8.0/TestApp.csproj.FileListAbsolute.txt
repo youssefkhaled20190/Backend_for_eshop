@@ -444,13 +444,6 @@ C:\Users\SOURCE\Source\Repos\youssefkhaled20190\Backend_for_eshop\TestApp\obj\De
 C:\Users\SOURCE\Source\Repos\youssefkhaled20190\Backend_for_eshop\TestApp\obj\Debug\net8.0\TestApp.pdb
 C:\Users\SOURCE\Source\Repos\youssefkhaled20190\Backend_for_eshop\TestApp\obj\Debug\net8.0\TestApp.genruntimeconfig.cache
 C:\Users\SOURCE\Source\Repos\youssefkhaled20190\Backend_for_eshop\TestApp\obj\Debug\net8.0\ref\TestApp.dll
-F:\FCIH\Projects\Backend_for_eshop\TestApp\obj\Debug\net8.0\TestApp.csproj.AssemblyReference.cache
-F:\FCIH\Projects\Backend_for_eshop\TestApp\obj\Debug\net8.0\TestApp.GeneratedMSBuildEditorConfig.editorconfig
-F:\FCIH\Projects\Backend_for_eshop\TestApp\obj\Debug\net8.0\TestApp.AssemblyInfoInputs.cache
-F:\FCIH\Projects\Backend_for_eshop\TestApp\obj\Debug\net8.0\TestApp.AssemblyInfo.cs
-F:\FCIH\Projects\Backend_for_eshop\TestApp\obj\Debug\net8.0\TestApp.csproj.CoreCompileInputs.cache
-F:\FCIH\Projects\Backend_for_eshop\TestApp\obj\Debug\net8.0\TestApp.MvcApplicationPartsAssemblyInfo.cache
-F:\FCIH\Projects\Backend_for_eshop\TestApp\obj\Debug\net8.0\TestApp.sourcelink.json
 F:\FCIH\Projects\Backend_for_eshop\TestApp\bin\Debug\net8.0\appsettings.Development.json
 F:\FCIH\Projects\Backend_for_eshop\TestApp\bin\Debug\net8.0\appsettings.json
 F:\FCIH\Projects\Backend_for_eshop\TestApp\bin\Debug\net8.0\TestApp.staticwebassets.runtime.json
@@ -580,6 +573,13 @@ F:\FCIH\Projects\Backend_for_eshop\TestApp\bin\Debug\net8.0\TestApp.DAL.dll
 F:\FCIH\Projects\Backend_for_eshop\TestApp\bin\Debug\net8.0\TestApp.PLL.dll
 F:\FCIH\Projects\Backend_for_eshop\TestApp\bin\Debug\net8.0\TestApp.DAL.pdb
 F:\FCIH\Projects\Backend_for_eshop\TestApp\bin\Debug\net8.0\TestApp.PLL.pdb
+F:\FCIH\Projects\Backend_for_eshop\TestApp\obj\Debug\net8.0\TestApp.csproj.AssemblyReference.cache
+F:\FCIH\Projects\Backend_for_eshop\TestApp\obj\Debug\net8.0\TestApp.GeneratedMSBuildEditorConfig.editorconfig
+F:\FCIH\Projects\Backend_for_eshop\TestApp\obj\Debug\net8.0\TestApp.AssemblyInfoInputs.cache
+F:\FCIH\Projects\Backend_for_eshop\TestApp\obj\Debug\net8.0\TestApp.AssemblyInfo.cs
+F:\FCIH\Projects\Backend_for_eshop\TestApp\obj\Debug\net8.0\TestApp.csproj.CoreCompileInputs.cache
+F:\FCIH\Projects\Backend_for_eshop\TestApp\obj\Debug\net8.0\TestApp.MvcApplicationPartsAssemblyInfo.cache
+F:\FCIH\Projects\Backend_for_eshop\TestApp\obj\Debug\net8.0\TestApp.sourcelink.json
 F:\FCIH\Projects\Backend_for_eshop\TestApp\obj\Debug\net8.0\staticwebassets.build.json
 F:\FCIH\Projects\Backend_for_eshop\TestApp\obj\Debug\net8.0\staticwebassets.development.json
 F:\FCIH\Projects\Backend_for_eshop\TestApp\obj\Debug\net8.0\staticwebassets\msbuild.TestApp.Microsoft.AspNetCore.StaticWebAssets.props
@@ -595,3 +595,7 @@ F:\FCIH\Projects\Backend_for_eshop\TestApp\obj\Debug\net8.0\TestApp.pdb
 F:\FCIH\Projects\Backend_for_eshop\TestApp\obj\Debug\net8.0\TestApp.genruntimeconfig.cache
 F:\FCIH\Projects\Backend_for_eshop\TestApp\obj\Debug\net8.0\ref\TestApp.dll
 F:\FCIH\Projects\Backend_for_eshop\TestApp\obj\Debug\net8.0\TestApp.MvcApplicationPartsAssemblyInfo.cs
+F:\FCIH\Projects\Backend_for_eshop\TestApp\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+F:\FCIH\Projects\Backend_for_eshop\TestApp\bin\Debug\net8.0\MailKit.dll
+F:\FCIH\Projects\Backend_for_eshop\TestApp\bin\Debug\net8.0\MimeKit.dll
+F:\FCIH\Projects\Backend_for_eshop\TestApp\bin\Debug\net8.0\System.Formats.Asn1.dll

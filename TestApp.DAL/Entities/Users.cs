@@ -12,6 +12,6 @@ namespace TestApp.DAL.Entities
         public string FullName { get; set; }
         public virtual ICollection<Products> Products { get; set; }
         public virtual ICollection<Rating> Ratings { get; set; }
-        public virtual ICollection<Payment> Payments { get; set; }
+        public virtual ICollection<PaymentProcess> PaymentProcesses { get; set; }
     }
 }

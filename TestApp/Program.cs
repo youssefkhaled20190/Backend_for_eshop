@@ -1,4 +1,3 @@
-
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -13,11 +12,9 @@ using TestApp.Mapper;
 using TestApp.PLL.Interfaces;
 using TestApp.PLL.Repositories;
 
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
 builder.Services.AddDbContext<StoreContext>(options =>
 {
@@ -29,6 +26,7 @@ builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepositor
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IRatingRepository, RatingRepository>();
+builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
 
 // AutoMapper configuration
 builder.Services.AddAutoMapper(m =>
@@ -36,6 +34,7 @@ builder.Services.AddAutoMapper(m =>
     m.AddProfile(new CategoryProfile());
     m.AddProfile(new ProductProfile());
     m.AddProfile(new RatingProfile());
+    m.AddProfile(new PaymentProfile());
 });
 
 // Identity configuration
@@ -68,7 +67,8 @@ builder.Services.AddAuthentication(options =>
         ValidateIssuer = true,
         ValidIssuer = jwtOptions.Issuer,
         ValidateAudience = true,
-        ValidAudience = jwtOptions.Audience,
+        // Convert the audience list from the configuration string into a list
+        ValidAudiences = jwtOptions.Audience,
         ValidateIssuerSigningKey = true,
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtOptions.SigningKey))
     };
@@ -88,15 +88,16 @@ builder.Services.AddSwaggerGen(c =>
 
     c.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
-        { new OpenApiSecurityScheme
-          {
-              Reference = new OpenApiReference
-              {
-                  Type = ReferenceType.SecurityScheme,
-                  Id = "Bearer"
-              }
-          },
-          new string[] { }
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            new string[] { }
         }
     });
 });

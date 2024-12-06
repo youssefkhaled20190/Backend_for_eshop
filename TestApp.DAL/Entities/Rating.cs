@@ -13,6 +13,8 @@ namespace TestApp.DAL.Entities
         public int Score { get; set; }
         [ForeignKey("ProductId")]
 
+        public string Comment { get; set; }
+
         public int ProductId { get; set; }
         public Products Product { get; set; }
         [ForeignKey("UserId")]
